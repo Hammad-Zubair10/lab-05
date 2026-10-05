@@ -179,18 +179,18 @@ fun CityListScreen(
             }
         }
 
-
+        // Floating action button which deletes city when a row is clicked
         FloatingActionButton(
             onClick = {
                 val dCity = selectedCity
-                if (dCity != null){
+                if (dCity != null){       // Only deletes city when one is selected
 
                     onDeleteCity(dCity)
                     selectedCity = null
                     editedCityName = ""
                     editedProvinceName = ""
 
-                }
+                }                    // else do nothing
             },
             modifier = Modifier
                 .align(Alignment.End)
