@@ -1,10 +1,11 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.compose)
 
     id("com.android.application")
     // Add the Google Services Gradle plugin
     id("com.google.gms.google-services")
+
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
