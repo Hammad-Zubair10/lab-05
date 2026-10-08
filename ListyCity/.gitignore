@@ -13,4 +13,4 @@
 .externalNativeBuild
 .cxx
 local.properties
-/app/google-services.json
+ListyCity/app/google-services.json
